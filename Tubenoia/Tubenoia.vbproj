@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D1ADEE1-3E71-4FA3-8ACC-34E28F5AA106}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tubenoia.My.MyApplication</StartupObject>
+    <RootNamespace>Tubenoia</RootNamespace>
+    <AssemblyName>Tubenoia</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tubenoia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tubenoia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Tubenoia.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeathByCaptcha.NET2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DeathByCaptcha.NET2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=1.7.0.25712, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Google\Google YouTube SDK for .NET\ASP Sample\Bin\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=1.7.0.25712, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Google\Google YouTube SDK for .NET\ASP Sample\Bin\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.YouTube, Version=1.7.0.1, Culture=neutral, PublicKeyToken=af04a32718ae8833, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Google\Google YouTube SDK for .NET\ASP Sample\Bin\Google.GData.YouTube.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectWIFE, Version=0.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\ProjectWIFE.dll</HintPath>
+    </Reference>
+    <Reference Include="RssToolkit, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\RssToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Functions.vb" />
+    <Compile Include="Classes\WebWrapper.vb" />
+    <Compile Include="Classes\YouTube.vb" />
+    <Compile Include="Forms\frmAccProxBinder.Designer.vb">
+      <DependentUpon>frmAccProxBinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAccProxBinder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddUpload.Designer.vb">
+      <DependentUpon>frmAddUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAvatarScraper.Designer.vb">
+      <DependentUpon>frmAvatarScraper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAvatarScraper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAvatarUploader.designer.vb">
+      <DependentUpon>frmAvatarUploader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAvatarUploader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChangeAPI.Designer.vb">
+      <DependentUpon>frmChangeAPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChangeAPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChangeLog.Designer.vb">
+      <DependentUpon>frmChangeLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChangeLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCommentFinder.Designer.vb">
+      <DependentUpon>frmCommentFinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCommentFinder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCommentObfuscator.Designer.vb">
+      <DependentUpon>frmCommentObfuscator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCommentObfuscator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAccountChecker.Designer.vb">
+      <DependentUpon>frmAccountChecker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAccountChecker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddVideo.Designer.vb">
+      <DependentUpon>frmAddVideo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCaptcha.Designer.vb">
+      <DependentUpon>frmCaptcha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCaptcha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCommentRater.Designer.vb">
+      <DependentUpon>frmCommentRater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCommentRater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCommentRaterForm.Designer.vb">
+      <DependentUpon>frmCommentRaterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCommentRaterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCommentScraper.Designer.vb">
+      <DependentUpon>frmCommentScraper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCommentScraper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFE.Designer.vb">
+      <DependentUpon>frmFE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFilters.Designer.vb">
+      <DependentUpon>frmFilters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFilters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFriendAdder.Designer.vb">
+      <DependentUpon>frmFriendAdder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFriendAdder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMassDownload.Designer.vb">
+      <DependentUpon>frmMassDownload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMassDownload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMassUploader.Designer.vb">
+      <DependentUpon>frmMassUploader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMassUploader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMessageSender.Designer.vb">
+      <DependentUpon>frmMessageSender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMessageSender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPasswordChanger.Designer.vb">
+      <DependentUpon>frmPasswordChanger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPasswordChanger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProxyScraper.Designer.vb">
+      <DependentUpon>frmProxyScraper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProxyScraper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRank.Designer.vb">
+      <DependentUpon>frmRank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRetrieveAny.Designer.vb">
+      <DependentUpon>frmRetrieveAny.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRetrieveAny.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRetrieveFriends.Designer.vb">
+      <DependentUpon>frmRetrieveFriends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRetrieveFriends.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRetrieveSubscribers.Designer.vb">
+      <DependentUpon>frmRetrieveSubscribers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRetrieveSubscribers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTools.Designer.vb">
+      <DependentUpon>frmTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserCommentScraper.Designer.vb">
+      <DependentUpon>frmUserCommentScraper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserCommentScraper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserFilter.Designer.vb">
+      <DependentUpon>frmUserFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserScraper.Designer.vb">
+      <DependentUpon>frmUserScraper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserScraper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoChecker.Designer.vb">
+      <DependentUpon>frmVideoChecker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoChecker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoFilter.Designer.vb">
+      <DependentUpon>frmVideoFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraper.Designer.vb">
+      <DependentUpon>frmVideoScraper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperChannel.Designer.vb">
+      <DependentUpon>frmVideoScraperChannel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperChannel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperKeywords.Designer.vb">
+      <DependentUpon>frmVideoScraperKeywords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperKeywords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperTop.Designer.vb">
+      <DependentUpon>frmVideoScraperTop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperTop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperViral.Designer.vb">
+      <DependentUpon>frmVideoScraperViral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoScraperViral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVideoTools.Designer.vb">
+      <DependentUpon>frmVideoTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVideoTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Theme\GUI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmAccountChecker.resx">
+      <DependentUpon>frmAccountChecker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAccProxBinder.resx">
+      <DependentUpon>frmAccProxBinder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddUpload.resx">
+      <DependentUpon>frmAddUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddVideo.resx">
+      <DependentUpon>frmAddVideo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAvatarScraper.resx">
+      <DependentUpon>frmAvatarScraper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAvatarUploader.resx">
+      <DependentUpon>frmAvatarUploader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCaptcha.resx">
+      <DependentUpon>frmCaptcha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChangeAPI.resx">
+      <DependentUpon>frmChangeAPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChangeLog.resx">
+      <DependentUpon>frmChangeLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCommentFinder.resx">
+      <DependentUpon>frmCommentFinder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCommentObfuscator.resx">
+      <DependentUpon>frmCommentObfuscator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCommentRater.resx">
+      <DependentUpon>frmCommentRater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCommentRaterForm.resx">
+      <DependentUpon>frmCommentRaterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCommentScraper.resx">
+      <DependentUpon>frmCommentScraper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFE.resx">
+      <DependentUpon>frmFE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFilters.resx">
+      <DependentUpon>frmFilters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFriendAdder.resx">
+      <DependentUpon>frmFriendAdder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMassDownload.resx">
+      <DependentUpon>frmMassDownload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMassUploader.resx">
+      <DependentUpon>frmMassUploader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMessageSender.resx">
+      <DependentUpon>frmMessageSender.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPasswordChanger.resx">
+      <DependentUpon>frmPasswordChanger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProxyScraper.resx">
+      <DependentUpon>frmProxyScraper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRank.resx">
+      <DependentUpon>frmRank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRetrieveAny.resx">
+      <DependentUpon>frmRetrieveAny.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRetrieveFriends.resx">
+      <DependentUpon>frmRetrieveFriends.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRetrieveSubscribers.resx">
+      <DependentUpon>frmRetrieveSubscribers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTools.resx">
+      <DependentUpon>frmTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserCommentScraper.resx">
+      <DependentUpon>frmUserCommentScraper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserFilter.resx">
+      <DependentUpon>frmUserFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserScraper.resx">
+      <DependentUpon>frmUserScraper.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoChecker.resx">
+      <DependentUpon>frmVideoChecker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoFilter.resx">
+      <DependentUpon>frmVideoFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoScraper.resx">
+      <DependentUpon>frmVideoScraper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoScraperChannel.resx">
+      <DependentUpon>frmVideoScraperChannel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoScraperKeywords.resx">
+      <DependentUpon>frmVideoScraperKeywords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoScraperTop.resx">
+      <DependentUpon>frmVideoScraperTop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoScraperViral.resx">
+      <DependentUpon>frmVideoScraperViral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVideoTools.resx">
+      <DependentUpon>frmVideoTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Tubenoia.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CHILKATCERTIFICATELib">
+      <Guid>{2138BF27-7383-435B-A6F5-89B1DEAB2130}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ChilkatCharset2Lib">
+      <Guid>{2497C38C-6C8B-453F-8EBA-3C2821A5551B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CHILKATMIMELib">
+      <Guid>{2555C8B7-8681-4845-94B5-46E6623D8A06}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CHILKATSOCKETLib">
+      <Guid>{AC62A97C-18B6-4971-8581-12E2A5CADE64}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CHILKATUTILLib">
+      <Guid>{246241C8-3F53-42D3-AF90-9FF544117B99}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
